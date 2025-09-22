@@ -6,6 +6,7 @@
     <title>Nostr Frontend</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/nostr-tools/lib/nostr.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.min.js"></script>
 </head>
 <body>
     <header>
@@ -19,6 +20,12 @@
 
             <label for="npub-input">Nostr Public Key (npub):</label>
             <input type="text" id="npub-input" placeholder="npub...">
+
+            <label for="kind-select">Inhaltstyp:</label>
+            <select id="kind-select">
+                <option value="1" selected>Notizen (Kind 1)</option>
+                <option value="30023">Artikel (Kind 30023)</option>
+            </select>
 
             <button id="fetch-button">Events laden</button>
         </div>
