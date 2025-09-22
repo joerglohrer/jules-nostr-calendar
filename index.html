@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostr Frontend</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/nostr-tools/lib/nostr.bundle.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Nostr Frontend</h1>
+    </header>
+
+    <main>
+        <div id="controls">
+            <label for="relay-input">Relay URL:</label>
+            <input type="text" id="relay-input" value="wss://relay.damus.io">
+
+            <label for="npub-input">Nostr Public Key (npub):</label>
+            <input type="text" id="npub-input" placeholder="npub...">
+
+            <button id="fetch-button">Events laden</button>
+        </div>
+
+        <div id="events-container">
+            <!-- Events will be displayed here -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
